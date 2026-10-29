@@ -59,7 +59,7 @@ Weather-App/
 
 ## 🌐 Live Demo
 
-[Click here to view the Weather App](https://sowmigasriv.github.io/Weather-App/)
+[Click here to view the Weather App](https://sowmigasriv.github.io/Weather-Application/)
 
 ## 🎯 Project Objective
 
