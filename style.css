@@ -1,0 +1,227 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 30px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #f8fafc;
+    background:
+        radial-gradient(ellipse at 15% 15%, #273a73 0%, transparent 40%),
+        radial-gradient(ellipse at 85% 85%, #44215f 0%, transparent 38%),
+        #090e20;
+}
+
+/* Main weather dashboard */
+.weather-app {
+    width: 100%;
+    max-width: 760px;
+    padding: 34px;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    border-radius: 28px;
+    background: linear-gradient(
+        145deg,
+        rgba(30, 42, 76, 0.92),
+        rgba(17, 22, 45, 0.96)
+    );
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+}
+
+/* Heading */
+h1 {
+    margin: 0;
+    font-size: 30px;
+    letter-spacing: -1px;
+    color: #ffffff;
+}
+
+.subtitle {
+    margin: 9px 0 28px;
+    color: #a5b4d4;
+    font-size: 15px;
+}
+
+/* Search bar */
+.search-box {
+    display: flex;
+    gap: 10px;
+    padding: 7px;
+    border: 1px solid #394563;
+    border-radius: 15px;
+    background: #111a32;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    padding: 13px;
+    border: none;
+    outline: none;
+    color: white;
+    background: transparent;
+    font-size: 15px;
+}
+
+input::placeholder {
+    color: #8491ae;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 11px;
+    background: linear-gradient(135deg, #8b7bff, #5c63ee);
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, filter 0.2s;
+}
+
+button:hover {
+    filter: brightness(1.15);
+    transform: translateY(-1px);
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+/* Status message */
+#message {
+    margin: 18px 2px;
+    color: #a5b4d4;
+    font-size: 14px;
+}
+
+/* Weather display */
+.weather-card {
+    margin-top: 22px;
+    padding: 28px;
+    border: 1px solid rgba(176, 190, 255, 0.16);
+    border-radius: 23px;
+    background:
+        radial-gradient(
+            circle at 80% 15%,
+            rgba(139, 123, 255, 0.22),
+            transparent 35%
+        ),
+        linear-gradient(130deg, #202d52, #151d39);
+}
+
+/* City name */
+.weather-card h2 {
+    margin: 0;
+    font-size: 23px;
+    font-weight: 600;
+    color: #f1f5ff;
+}
+
+/* Large weather icon */
+.weather-icon {
+    margin: 12px 0 0;
+    font-size: 76px;
+    line-height: 1.3;
+    filter: drop-shadow(0 8px 18px rgba(139, 123, 255, 0.2));
+}
+
+/* Temperature */
+#temperature {
+    margin: 0;
+    font-size: clamp(48px, 9vw, 76px);
+    line-height: 1.1;
+    letter-spacing: -3px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+#condition {
+    margin: 12px 0 28px;
+    color: #b6c4e7;
+    font-size: 17px;
+}
+
+/* Weather information tiles */
+.weather-details {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.detail {
+    padding: 18px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    border-radius: 16px;
+    background: rgba(8, 14, 33, 0.48);
+    text-align: left;
+}
+
+.detail span {
+    font-size: 23px;
+}
+
+.detail p {
+    margin: 12px 0 7px;
+    color: #98a8cb;
+    font-size: 12px;
+}
+
+.detail strong {
+    color: #ffffff;
+    font-size: 16px;
+    overflow-wrap: anywhere;
+}
+
+/* Mobile design */
+@media (max-width: 520px) {
+    .weather-app {
+        padding: 23px 18px;
+        border-radius: 22px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .weather-card {
+        padding: 22px 16px;
+    }
+
+    .weather-details {
+        gap: 7px;
+    }
+
+    .detail {
+        padding: 13px 8px;
+    }
+
+    .detail p {
+        font-size: 11px;
+    }
+
+    .detail strong {
+        font-size: 13px;
+    }
+
+    .search-box {
+        gap: 4px;
+    }
+
+    button {
+        padding: 12px;
+    }
+}
+
