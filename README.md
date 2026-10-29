@@ -6,16 +6,16 @@ The application retrieves a city's geographic coordinates using the Geocoding AP
 
 ## ✨ Features
 
-- 🔍 **City Search:** Search for cities around the world.
-- 🌡️ **Current Temperature:** View the current temperature in Celsius.
-- ☁️ **Weather Conditions:** Display conditions such as sunny, cloudy, rainy, and thunderstorms.
-- 💧 **Humidity:** View the current relative humidity.
-- 💨 **Wind Speed:** Check the current wind speed.
-- 🌡️ **Feels-Like Temperature:** View the apparent temperature.
-- 🌙 **Dynamic Weather Icons:** Display icons based on weather conditions and daytime or nighttime.
-- ⚠️ **Error Handling:** Show helpful messages when a city cannot be found or a request fails.
-- 📱 **Responsive Design:** Works on desktop and mobile screens.
-- 🌐 **API Integration:** Fetch weather information dynamically from an external API.
+- **City Search:** Search for cities around the world.
+- **Current Temperature:** View the current temperature in Celsius.
+- **Weather Conditions:** Display conditions such as sunny, cloudy, rainy, and thunderstorms.
+- **Humidity:** View the current relative humidity.
+- **Wind Speed:** Check the current wind speed.
+- **Feels-Like Temperature:** View the apparent temperature.
+- **Dynamic Weather Icons:** Display icons based on weather conditions and daytime or nighttime.
+- **Error Handling:** Show helpful messages when a city cannot be found or a request fails.
+- **Responsive Design:** Works on desktop and mobile screens.
+- **API Integration:** Fetch weather information dynamically from an external API.
 
 ## 🛠️ Technologies Used
 
@@ -65,6 +65,3 @@ Weather-App/
 
 The objective of this project is to learn front-end web development, API integration, asynchronous JavaScript, JSON data handling, and dynamic DOM manipulation by building a practical weather application.
 
-## 👩‍💻 Author
-
-**Sowmiga Sri**
